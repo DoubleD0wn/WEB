@@ -1,0 +1,112 @@
+html, body { 
+    background-color: rgb(254, 145, 27);
+    height: 100%; /* Высота родителя */
+    margin: 0; /* Убираем отступы у страницы */
+    padding-left: 10px;
+   }
+
+   .layout {
+    margin: 15px 0; /* Отступы сверху и снизу */ 
+     /* Отменяем действие float */}
+   .col1 {
+    width: 50%;
+    float: left;
+    } 
+   .col2 {margin-left: 51%;
+}
+.col2text{
+    color: white;
+    font-size: 30pt;
+    padding: 90px 0 0 220px;
+}
+.col2 img {
+    float:left;
+}
+.head {
+    margin-top: 10px;
+    padding: 0px 0px 15px 0px;
+    font: 40pt normal;
+    text-shadow: 4px 1px 2px black;
+    color: white;
+}
+
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+    float:left;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3A2F28;
+   
+   }
+   .scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .scale img:hover {
+    transform: scale(1.5); /* Увеличиваем масштаб */
+   }
+   .text{
+    color: white;
+    text-shadow: 2px 1px 2px black;
+    text-align: justify;
+    font: 16pt normal;
+    padding-left: 390px;
+   }
+.headlist{
+    color:#d84c00;
+    font-weight: bold;
+    font-size: 25pt;
+    padding-left: 20px;
+}
+.list{
+    background: #d9e0a6;  
+}
+li {
+    font-size: 18pt;
+    list-style-type: none;
+    width: 85%;
+    padding: 3px 0 3px 0;
+}
+ul{
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+li:nth-child(2n) {
+
+    background-color:  #e5eac2;/* фон четных строк */
+  }
+  .recept{
+      background:#fff9f2;
+  }
+ .text1{
+     padding-left: 20px;
+    color:#e39915;
+    font-size: 19pt;
+ }
+ .text2{
+     color: #547017;
+ }
+
+ .photo{
+     width: 80%;
+     margin: 0 10% 0 10%;
+ }
+ .photo img {
+     float: left;
+     width: 200px;
+     margin: 5px 10px 0 0;
+ }
+
+ .textrecept{
+font-size: 17pt;
+margin:0;
+text-align: justify;
+ }
+.textreceptfirst{
+    font-size: 17pt;
+    margin:0; 
+}
+.container1{
+    
+    display: flex;
+}

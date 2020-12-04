@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+<head>
+ <title>Апельсиновый сайт</title>
+ <meta charset ="utf-8">
+ <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class = "layout">
+        <div class = "col1"> 
+            <img src ="left.png" alt="pic">
+        </div>
+        <div class = "col2"> 
+            <div class = "header">
+                <p><b>Апельсиновый сайт</b></p>
+            </div>
+            <div class ="content">
+                <p>
+                    sfrtg
+                </p>
+            </div>
+        </div>
+        <div class = "col3"> 
+            <img src ="right.png" alt="pic">
+        </div>
+
+        
+    </div>
+</body>
+
+
+
+html, body { 
+    background-color: rgb(254, 145, 27);
+    height: 100%; /* Высота родителя */
+    margin: 0; /* Убираем отступы у страницы */
+   }
+.layout {position: relative;}
+.layout div {position: absolute;}
+.col1 {width: 28%; } 
+.col2 {left: 28%; width: 44%; z-index: 100;}
+.col3 {right: 0; width: 28%; }
+
+.col1 img {overflow: hidden; width: 100%; margin-top: 10%;}
+.col3 img {overflow: hidden; width: 100%; margin-top: 100%;}
+
+.header {
+    background-image: url(12.jpg);
+    margin :0; padding: 0;
+    margin-top: 10%;
+    width: 115%; 
+    height: 100px;
+    transform: skew(30deg);
+    margin-left: -9%;
+    box-shadow: 0 0 4px 4px rgb(254, 145, 27) inset;
+    border: 10px dashed black;
+    border-radius: 8px;
+}
+p {color: #fff;}
+.content {background-color: chocolate;
+}
